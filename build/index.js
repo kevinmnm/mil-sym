@@ -3,8 +3,21 @@ const fsp = require("fs").promises;
 const path = require("path");
 
 const CWD = process.cwd();
-const READ_FILE_PATH = path.join(CWD, "src", "sm-bc.js");
-const WRITE_FILE_PATH = path.join(CWD, "src", "index.ts");
+const READ_DIR = path.join(CWD, "src");
+const READ_FILE_PATH = path.join(READ_DIR, "sm-bc.js");
+const WRITE_DIR = path.join(CWD, "src");
+// const WRITE_FILE_PATH = path.join(WRITE_DIR, "sm-bc.ts");
+const WRITE_FILE_PATH = (() => {
+  const packageJsonPath = path.join(CWD, "package.json");
+  const content = fs.readFileSync(packageJsonPath, "utf8");
+  const json = JSON.parse(content);
+  const main = json.main;
+  const mainFileName = path.basename(main);
+  const writeFilePath = path.join(WRITE_DIR, mainFileName);
+  const final = writeFilePath.replace(".js", ".ts");
+  return final;
+})();
+console.warn("WRITE_FILE_PATH", WRITE_FILE_PATH);
 const DIST_DIR_PATH = (() => {
   const tsconfigPath = path.join(CWD, "tsconfig.json");
   const content = fs.readFileSync(tsconfigPath, "utf8");
@@ -16,6 +29,7 @@ const DIST_DIR_PATH = (() => {
   const distDirPath = path.join(CWD, outDir);
   return distDirPath;
 })();
+const ASSET_DIRS = [path.join(CWD, "src", "assets")];
 
 main();
 
@@ -24,14 +38,32 @@ main();
  **/
 async function main() {
   try {
+    console.log("=> Removing existing dist...");
     await fsp.rm(DIST_DIR_PATH, { recursive: true, force: true });
 
+    console.log("=> Creating empty dist...");
+    await fsp.mkdir(DIST_DIR_PATH);
+
+    console.log("=> Resolving export syntax...");
     const { exportableNames, exportSyntax } =
       await showExportableFunctionNames();
 
+    console.log(
+      `=> Duplicating original library file "${path.basename(
+        READ_FILE_PATH
+      )}" to "${path.basename(WRITE_FILE_PATH)}"...`
+    );
     await fsp.copyFile(READ_FILE_PATH, WRITE_FILE_PATH);
 
+    console.log("=> Appending exports in duplicated file...");
     await fsp.appendFile(WRITE_FILE_PATH, `\n\n${exportSyntax}`);
+
+    console.log("=> Copying over assets files...");
+    ASSET_DIRS.forEach((assetDir) => {
+      fs.cpSync(assetDir, path.join(CWD, "dist", "assets"), {
+        recursive: true,
+      });
+    });
   } catch (error) {
     throw error;
   }
@@ -85,12 +117,43 @@ async function showExportableFunctionNames() {
     });
     exportSyntax += "}";
 
-    console.log("Exportable function and var names:", exportableNames);
+    //  console.log("Exportable function and var names:", exportableNames);
 
-    console.log("Export syntax:", exportSyntax);
+    //  console.log("Export syntax:", exportSyntax);
   } catch (error) {
     console.error(error);
   }
 
   return { exportableNames, exportSyntax };
 }
+
+// async function copyDirectory(source, destination) {
+//   try {
+//     // Create the destination directory
+//     await fsp.mkdir(destination, { recursive: true });
+
+//     // Read the contents of the source directory
+//     const items = await fsp.readdir(source);
+
+//     // Loop through each item in the source directory
+//     for (const item of items) {
+//       const sourcePath = path.join(source, item);
+//       const destPath = path.join(destination, item);
+
+//       // Get stats of the item to check if it's a file or a directory
+//       const stat = await fsp.stat(sourcePath);
+
+//       if (stat.isDirectory()) {
+//         // Recursively copy the directory
+//         await copyDirectory(sourcePath, destPath);
+//       } else {
+//         // Copy the file
+//         await fsp.copyFile(sourcePath, destPath);
+//       }
+//     }
+
+//     console.log(`Copied ${source} to ${destination}`);
+//   } catch (err) {
+//     console.error("Error copying directory:", err);
+//   }
+// }

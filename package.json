@@ -9,7 +9,7 @@
    "scripts": {
       "build": "node ./build/index.js && tsc",
       "package": "npm publish",
-      "deploy": "npm run build && npm version patch && npm run package"
+      "deploy__old": "npm run build && npm version patch && npm run package"
    },
    "keywords": [],
    "author": "Kevin Song <kevin.song@parsons.us>",
