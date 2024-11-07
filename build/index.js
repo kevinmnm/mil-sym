@@ -44,16 +44,23 @@ async function main() {
     console.log("=> Creating empty dist...");
     await fsp.mkdir(DIST_DIR_PATH);
 
-    console.log("=> Resolving export syntax...");
-    const { exportableNames, exportSyntax } =
-      await showExportableFunctionNames();
-
     console.log(
       `=> Duplicating original library file "${path.basename(
         READ_FILE_PATH
       )}" to "${path.basename(WRITE_FILE_PATH)}"...`
     );
     await fsp.copyFile(READ_FILE_PATH, WRITE_FILE_PATH);
+
+    console.log(
+      `=> Fixing missing variable declarations in "${path.basename(
+        WRITE_FILE_PATH
+      )}"...`
+    );
+    await fixMissingVariableDeclarations(WRITE_FILE_PATH);
+
+    console.log("=> Resolving export syntax...");
+    const { exportableNames, exportSyntax } =
+      await showExportableFunctionNames();
 
     console.log("=> Appending exports in duplicated file...");
     await fsp.appendFile(WRITE_FILE_PATH, `\n\n${exportSyntax}`);
@@ -157,3 +164,61 @@ async function showExportableFunctionNames() {
 //     console.error("Error copying directory:", err);
 //   }
 // }
+
+/**
+ * Append 'var ' or 'window.' in front of missing ones.
+ * This step is needed for Vue router error.
+ **/
+async function fixMissingVariableDeclarations(targetFilePath) {
+  const MISSING_DECLARATION_VARS = ["Double", "Integer", "System"];
+
+  try {
+    const data = await fsp.readFile(targetFilePath, "utf8");
+    const lines = data.split("\n");
+
+    //  const modifiedLines = lines.map((line) => {
+    //    // Check if the line contains any of the missing variables without a declaration keyword
+    //    for (const variable of VARIABLES_MISSING_DECLARATION) {
+    //      // Use a regular expression to check if the variable is used but not declared properly
+    //      if (
+    //        line.includes(variable) &&
+    //        !/^\s*(var|let|const|window)\s+/.test(line)
+    //      ) {
+    //        return `var ${line.trim()}`; // Use var to declare the variable
+    //      }
+    //    }
+    //    return line; // Return the line unmodified if no missing declaration
+    //  });
+
+    const modifiedLines = lines.map((line) => {
+      let isMissingVar = false;
+
+      for (let i = 0; i < MISSING_DECLARATION_VARS.length; i++) {
+        const varName = MISSING_DECLARATION_VARS[i];
+
+        // Check if the line starts with the variable name and is followed by either a space or an '=' sign
+        const regex = new RegExp(`^${varName}[ =]`);
+        if (regex.test(line)) {
+          isMissingVar = true;
+          break;
+        }
+      }
+
+      if (!isMissingVar) return line; // No missing declaration found, return the line unchanged
+
+      console.log("-- missing var line", line);
+
+      // Add 'var' at the beginning of the line
+      line = `var ${line}`;
+      return line;
+    });
+
+    const modifiedData = modifiedLines.join("\n");
+
+    await fsp.writeFile(targetFilePath, modifiedData, "utf8");
+
+    return;
+  } catch (error) {
+    console.log(error);
+  }
+}
