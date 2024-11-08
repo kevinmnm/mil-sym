@@ -60,7 +60,6 @@ async function main() {
 
     console.log("=> Force adding declaration to variables...");
     await forceAddVariableDeclaration(WRITE_FILE_PATH);
-    return;
 
     console.log("=> Resolving export syntax...");
     const { exportableNames, exportSyntax } =
@@ -186,78 +185,116 @@ async function fixMissingVariableDeclarations(targetFilePath) {
  * Forcefully append missing variable and its declaration.
  **/
 async function forceAddVariableDeclaration(targetFilePath) {
-  throw new Error("not complete!");
-  //   const VARIABLES = [
-  //     "_TwoLabelOnly",
-  //     "_friendlyUnitFillColor",
-  //     "_hostileUnitFillColor",
-  //     "_neutralUnitFillColor",
-  //     "_unknownUnitFillColor",
-  //     "_friendlyGraphicFillColor",
-  //     "_hostileGraphicFillColor",
-  //     "_neutralGraphicFillColor",
-  //     "_unknownGraphicFillColor",
-  //     "_friendlyUnitLineColor",
-  //     "_hostileUnitLineColor",
-  //     "_neutralUnitLineColor",
-  //     "_unknownUnitLineColor",
-  //     "_friendlyGraphicLineColor",
-  //     "_hostileGraphicLineColor",
-  //     "_neutralGraphicLineColor",
-  //     "_unknownGraphicLineColor",
-  //   ];
-
   try {
-    const data = await fsp.readFile(targetFilePath, "utf8");
-    const lines = data.split("\n");
+    const fileContent = await fsp.readFile(targetFilePath, "utf8");
+    const lines = fileContent.split("\n");
 
-    const modifiedLines = lines.map((line) => {
+    const problematicVariableNames = [];
+    let prependFileContent = "var";
+
+    lines.forEach((line) => {
       const trimmedLine = line.trim();
-      /**
-       * trimmedLine starts with "("
-       * after "(", it starts with "_"
-       * the line includes "=" at some point after "_"
-       **/
       if (trimmedLine.startsWith("(")) {
-        // Check if the line starts with "(" and is followed immediately by "_"
         if (trimmedLine.charAt(1) === "_") {
-          // Find the index of "=" after the "_"
           const equalsIndex = trimmedLine.indexOf("=", 2); // Search after the underscore (position 2 onward)
 
           if (equalsIndex !== -1) {
             // Extract the substring between "_" (at index 1) and "=" (at equalsIndex)
-            const nameBetweenUnderscoreAndEquals = trimmedLine
-              .substring(2, equalsIndex)
-              .trim();
 
             // Extract the variable name between "(" and "_"
             const detectedVariableName = trimmedLine
               .substring(1, equalsIndex)
               .trim();
 
-            // Preserve the indentation before the parenthesis
-            const indentation = trimmedLine.slice(0, trimmedLine.indexOf("("));
+            if (!detectedVariableName) return;
 
-            // Create the modified line with `var` prepended right after the "("
-            const modifiedLine = `${indentation}( var ${detectedVariableName} ${trimmedLine.substring(
-              equalsIndex
-            )}`;
-
-            line = modifiedLine;
+            problematicVariableNames.push(detectedVariableName);
+            prependFileContent += ` ${detectedVariableName},`;
           }
         }
       }
-
-      // Add 'var' at the beginning of the line
-      return line;
     });
 
-    const modifiedData = modifiedLines.join("\n");
+    if (!problematicVariableNames.length) return;
 
-    await fsp.writeFile(targetFilePath, modifiedData, "utf8");
-
-    return;
+    const newFileContent = `${prependFileContent}\n\n${fileContent}`;
+    await fsp.writeFile(targetFilePath, newFileContent, "utf8");
   } catch (error) {
     console.log(error);
   }
 }
+// async function forceAddVariableDeclaration(targetFilePath) {
+//   //   const VARIABLES = [
+//   //     "_TwoLabelOnly",
+//   //     "_friendlyUnitFillColor",
+//   //     "_hostileUnitFillColor",
+//   //     "_neutralUnitFillColor",
+//   //     "_unknownUnitFillColor",
+//   //     "_friendlyGraphicFillColor",
+//   //     "_hostileGraphicFillColor",
+//   //     "_neutralGraphicFillColor",
+//   //     "_unknownGraphicFillColor",
+//   //     "_friendlyUnitLineColor",
+//   //     "_hostileUnitLineColor",
+//   //     "_neutralUnitLineColor",
+//   //     "_unknownUnitLineColor",
+//   //     "_friendlyGraphicLineColor",
+//   //     "_hostileGraphicLineColor",
+//   //     "_neutralGraphicLineColor",
+//   //     "_unknownGraphicLineColor",
+//   //   ];
+
+//   try {
+//     const data = await fsp.readFile(targetFilePath, "utf8");
+//     const lines = data.split("\n");
+
+//     const modifiedLines = lines.map((line) => {
+//       const trimmedLine = line.trim();
+//       /**
+//        * trimmedLine starts with "("
+//        * after "(", it starts with "_"
+//        * the line includes "=" at some point after "_"
+//        **/
+//       if (trimmedLine.startsWith("(")) {
+//         // Check if the line starts with "(" and is followed immediately by "_"
+//         if (trimmedLine.charAt(1) === "_") {
+//           // Find the index of "=" after the "_"
+//           const equalsIndex = trimmedLine.indexOf("=", 2); // Search after the underscore (position 2 onward)
+
+//           if (equalsIndex !== -1) {
+//             // Extract the substring between "_" (at index 1) and "=" (at equalsIndex)
+//             const nameBetweenUnderscoreAndEquals = trimmedLine
+//               .substring(2, equalsIndex)
+//               .trim();
+
+//             // Extract the variable name between "(" and "_"
+//             const detectedVariableName = trimmedLine
+//               .substring(1, equalsIndex)
+//               .trim();
+
+//             // Preserve the indentation before the parenthesis
+//             const indentation = trimmedLine.slice(0, trimmedLine.indexOf("("));
+
+//             // Create the modified line with `var` prepended right after the "("
+//             const modifiedLine = `${indentation}( var ${detectedVariableName} ${trimmedLine.substring(
+//               equalsIndex
+//             )}`;
+
+//             line = modifiedLine;
+//           }
+//         }
+//       }
+
+//       // Add 'var' at the beginning of the line
+//       return line;
+//     });
+
+//     const modifiedData = modifiedLines.join("\n");
+
+//     await fsp.writeFile(targetFilePath, modifiedData, "utf8");
+
+//     return;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
