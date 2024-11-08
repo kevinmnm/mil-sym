@@ -3,10 +3,10 @@ const fsp = require("fs").promises;
 const path = require("path");
 
 const CWD = process.cwd();
+const LIBRARY_FILE_NAME = "sm-bc.modified.js";
 const READ_DIR = path.join(CWD, "src");
-const READ_FILE_PATH = path.join(READ_DIR, "sm-bc.js");
+const READ_FILE_PATH = path.join(READ_DIR, LIBRARY_FILE_NAME);
 const WRITE_DIR = path.join(CWD, "src");
-// const WRITE_FILE_PATH = path.join(WRITE_DIR, "sm-bc.ts");
 const WRITE_FILE_PATH = (() => {
   const packageJsonPath = path.join(CWD, "package.json");
   const content = fs.readFileSync(packageJsonPath, "utf8");
@@ -17,7 +17,7 @@ const WRITE_FILE_PATH = (() => {
   const final = writeFilePath.replace(".js", ".ts");
   return final;
 })();
-console.warn("WRITE_FILE_PATH", WRITE_FILE_PATH);
+
 const DIST_DIR_PATH = (() => {
   const tsconfigPath = path.join(CWD, "tsconfig.json");
   const content = fs.readFileSync(tsconfigPath, "utf8");
