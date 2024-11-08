@@ -58,6 +58,10 @@ async function main() {
     );
     await fixMissingVariableDeclarations(WRITE_FILE_PATH);
 
+    console.log("=> Force adding declaration to variables...");
+    await forceAddVariableDeclaration(WRITE_FILE_PATH);
+    return;
+
     console.log("=> Resolving export syntax...");
     const { exportableNames, exportSyntax } =
       await showExportableFunctionNames();
@@ -134,37 +138,6 @@ async function showExportableFunctionNames() {
   return { exportableNames, exportSyntax };
 }
 
-// async function copyDirectory(source, destination) {
-//   try {
-//     // Create the destination directory
-//     await fsp.mkdir(destination, { recursive: true });
-
-//     // Read the contents of the source directory
-//     const items = await fsp.readdir(source);
-
-//     // Loop through each item in the source directory
-//     for (const item of items) {
-//       const sourcePath = path.join(source, item);
-//       const destPath = path.join(destination, item);
-
-//       // Get stats of the item to check if it's a file or a directory
-//       const stat = await fsp.stat(sourcePath);
-
-//       if (stat.isDirectory()) {
-//         // Recursively copy the directory
-//         await copyDirectory(sourcePath, destPath);
-//       } else {
-//         // Copy the file
-//         await fsp.copyFile(sourcePath, destPath);
-//       }
-//     }
-
-//     console.log(`Copied ${source} to ${destination}`);
-//   } catch (err) {
-//     console.error("Error copying directory:", err);
-//   }
-// }
-
 /**
  * Append 'var ' or 'window.' in front of missing ones.
  * This step is needed for Vue router error.
@@ -175,20 +148,6 @@ async function fixMissingVariableDeclarations(targetFilePath) {
   try {
     const data = await fsp.readFile(targetFilePath, "utf8");
     const lines = data.split("\n");
-
-    //  const modifiedLines = lines.map((line) => {
-    //    // Check if the line contains any of the missing variables without a declaration keyword
-    //    for (const variable of VARIABLES_MISSING_DECLARATION) {
-    //      // Use a regular expression to check if the variable is used but not declared properly
-    //      if (
-    //        line.includes(variable) &&
-    //        !/^\s*(var|let|const|window)\s+/.test(line)
-    //      ) {
-    //        return `var ${line.trim()}`; // Use var to declare the variable
-    //      }
-    //    }
-    //    return line; // Return the line unmodified if no missing declaration
-    //  });
 
     const modifiedLines = lines.map((line) => {
       let isMissingVar = false;
@@ -210,6 +169,86 @@ async function fixMissingVariableDeclarations(targetFilePath) {
 
       // Add 'var' at the beginning of the line
       line = `var ${line}`;
+      return line;
+    });
+
+    const modifiedData = modifiedLines.join("\n");
+
+    await fsp.writeFile(targetFilePath, modifiedData, "utf8");
+
+    return;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/**
+ * Forcefully append missing variable and its declaration.
+ **/
+async function forceAddVariableDeclaration(targetFilePath) {
+  throw new Error("not complete!");
+  //   const VARIABLES = [
+  //     "_TwoLabelOnly",
+  //     "_friendlyUnitFillColor",
+  //     "_hostileUnitFillColor",
+  //     "_neutralUnitFillColor",
+  //     "_unknownUnitFillColor",
+  //     "_friendlyGraphicFillColor",
+  //     "_hostileGraphicFillColor",
+  //     "_neutralGraphicFillColor",
+  //     "_unknownGraphicFillColor",
+  //     "_friendlyUnitLineColor",
+  //     "_hostileUnitLineColor",
+  //     "_neutralUnitLineColor",
+  //     "_unknownUnitLineColor",
+  //     "_friendlyGraphicLineColor",
+  //     "_hostileGraphicLineColor",
+  //     "_neutralGraphicLineColor",
+  //     "_unknownGraphicLineColor",
+  //   ];
+
+  try {
+    const data = await fsp.readFile(targetFilePath, "utf8");
+    const lines = data.split("\n");
+
+    const modifiedLines = lines.map((line) => {
+      const trimmedLine = line.trim();
+      /**
+       * trimmedLine starts with "("
+       * after "(", it starts with "_"
+       * the line includes "=" at some point after "_"
+       **/
+      if (trimmedLine.startsWith("(")) {
+        // Check if the line starts with "(" and is followed immediately by "_"
+        if (trimmedLine.charAt(1) === "_") {
+          // Find the index of "=" after the "_"
+          const equalsIndex = trimmedLine.indexOf("=", 2); // Search after the underscore (position 2 onward)
+
+          if (equalsIndex !== -1) {
+            // Extract the substring between "_" (at index 1) and "=" (at equalsIndex)
+            const nameBetweenUnderscoreAndEquals = trimmedLine
+              .substring(2, equalsIndex)
+              .trim();
+
+            // Extract the variable name between "(" and "_"
+            const detectedVariableName = trimmedLine
+              .substring(1, equalsIndex)
+              .trim();
+
+            // Preserve the indentation before the parenthesis
+            const indentation = trimmedLine.slice(0, trimmedLine.indexOf("("));
+
+            // Create the modified line with `var` prepended right after the "("
+            const modifiedLine = `${indentation}( var ${detectedVariableName} ${trimmedLine.substring(
+              equalsIndex
+            )}`;
+
+            line = modifiedLine;
+          }
+        }
+      }
+
+      // Add 'var' at the beginning of the line
       return line;
     });
 
