@@ -32,7 +32,7 @@ const DIST_DIR_PATH = (() => {
 })();
 const ASSET_DIRS = [path.join(CWD, "src", "assets")];
 
-main();
+// main();
 
 /**
  * Actually convert the file.
@@ -169,7 +169,7 @@ async function fixMissingVariableDeclarations(targetFilePath) {
 
       if (!isMissingVar) return line; // No missing declaration found, return the line unchanged
 
-      console.log("-- missing var line", line);
+      // console.log("-- missing var line", line);
 
       // Add 'var' at the beginning of the line
       line = `var ${line}`;
@@ -309,13 +309,9 @@ async function forceAddVariableDeclaration(targetFilePath) {
  **/
 async function postBuildRemoveDuplicateVars(filepath = WRITE_FILE_PATH) {
   try {
-    //  const result = await showExportableFunctionNames();
-    //  const vars = result.exportableNames.vars;
-    //  console.log(vars);
-
     const filePath = filepath || WRITE_FILE_PATH;
-    const data = await fsp.readFile(filePath, "utf8");
-    const lines = data.split("\n");
+    const fileContent = await fsp.readFile(filePath, "utf8");
+    const lines = fileContent.split("\n");
 
     const detectedVars = [];
     const duplicateVars = [];
@@ -348,23 +344,49 @@ async function postBuildRemoveDuplicateVars(filepath = WRITE_FILE_PATH) {
       }
     });
 
-    const keptVarLines = [];
+    const keptFirstVars = [];
     const filteredLines = lines.filter((line) => {
       //>> Check if line is the targetted var declaration line <<//
-      const foundDuplicateLine = duplicateVars.find(
+      const foundDuplicateVar = duplicateVars.find(
         (obj) => obj.varLine === line
       );
-      if (!foundDuplicateLine) return true;
+      //>> If unrelated line, keep it <<//
+      if (!foundDuplicateVar) {
+        return true;
+      }
 
       //>> If very first line, keep it <<//
-      if (!keptVarLines.includes(foundDuplicateLine)) {
-        keptVarLines.push(foundDuplicateLine);
+      const foundKeptVar = keptFirstVars.find((kfv) => kfv.varLine === line);
+      if (!foundKeptVar) {
+        keptFirstVars.push(foundDuplicateVar);
         return true;
       }
 
       //>> If not very first line, remove it <<//
       return false;
     });
+
+   //  const filteredMoreLines = filteredLines.filter((line) => {
+   //    const detectedVar = detectedVars.find((dv) => dv.varLine === line);
+   //    if (!detectedVar) return true;
+
+   //    const detectedVarName = detectedVar.varName;
+   //    const detectedVarLine = detectedVar.varLine;
+
+   //    //>> Check if file content has `exports.${varName} = ${varName}` <<//
+   //    // fileContent.match(String.raw`/exports.${detectedVarName}/ = ${detectedVarName}`)
+   //    const regex = new RegExp(
+   //      `exports\\.${detectedVarName}\\s*=\\s*${detectedVarName}`,
+   //      "g"
+   //    );
+   //    const exportMatch = fileContent.match(regex);
+   //    if (exportMatch) {
+   //      console.warn("exportMatch", exportMatch);
+   //      return false;
+   //    }
+
+   //    return true;
+   //  });
 
     const newFileContent = filteredLines.join("\n");
     await fsp.writeFile(filePath, newFileContent, "utf8");
@@ -378,3 +400,8 @@ async function postBuildRemoveDuplicateVars(filepath = WRITE_FILE_PATH) {
     throw error;
   }
 }
+
+module.exports = {
+  DIST_DIR_PATH,
+  main,
+};

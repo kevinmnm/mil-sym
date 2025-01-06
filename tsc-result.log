@@ -1,0 +1,905 @@
+src/index.ts(1,414): error TS1009: Trailing comma not allowed.
+src/index.ts(57318,38): error TS2339: Property 'dashedLineTo' does not exist on type 'CanvasRenderingContext2D'.
+src/index.ts(57322,38): error TS2339: Property 'dashedLineTo' does not exist on type 'CanvasRenderingContext2D'.
+src/index.ts(57779,15): error TS2304: Cannot find name 'outcode'.
+src/index.ts(57782,18): error TS2304: Cannot find name 'outcode'.
+src/index.ts(57789,14): error TS2304: Cannot find name 'getWidth'.
+src/index.ts(57796,14): error TS2304: Cannot find name 'getHeight'.
+src/index.ts(58863,7): error TS2304: Cannot find name 'context'.
+src/index.ts(58979,8): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(58982,8): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(58989,8): error TS2339: Property 'isInfinite' does not exist on type '(value: any) => void'.
+src/index.ts(58992,22): error TS2345: Argument of type 'Number' is not assignable to parameter of type 'number'.
+  'number' is a primitive, but 'Number' is a wrapper object. Prefer using 'number' when possible.
+src/index.ts(58995,1): error TS2322: Type '(value: any) => string' is not assignable to type '() => string'.
+  Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/index.ts(59000,8): error TS2339: Property 'serialVersionUID' does not exist on type '(value: any) => void'.
+src/index.ts(59002,8): error TS2339: Property 'MIN_VALUE' does not exist on type '(value: any) => void'.
+src/index.ts(59003,8): error TS2339: Property 'MAX_VALUE' does not exist on type '(value: any) => void'.
+src/index.ts(59004,8): error TS2339: Property 'NEGATIVE_INFINITY' does not exist on type '(value: any) => void'.
+src/index.ts(59005,8): error TS2339: Property 'POSITIVE_INFINITY' does not exist on type '(value: any) => void'.
+src/index.ts(59006,8): error TS2339: Property 'NaN' does not exist on type '(value: any) => void'.
+src/index.ts(59007,8): error TS2339: Property 'TYPE' does not exist on type '(value: any) => void'.
+src/index.ts(59023,9): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(59028,9): error TS2339: Property 'toHexString' does not exist on type '(value: any) => any'.
+src/index.ts(59032,9): error TS2339: Property 'isInfinite' does not exist on type '(value: any) => any'.
+src/index.ts(59034,42): error TS2345: Argument of type 'Number' is not assignable to parameter of type 'number'.
+  'number' is a primitive, but 'Number' is a wrapper object. Prefer using 'number' when possible.
+src/index.ts(59037,1): error TS2322: Type '(value: any) => string' is not assignable to type '() => string'.
+  Target signature provides too few arguments. Expected 1 or more, but got 0.
+src/index.ts(59043,9): error TS2339: Property 'serialVersionUID' does not exist on type '(value: any) => any'.
+src/index.ts(59045,9): error TS2339: Property 'MIN_VALUE' does not exist on type '(value: any) => any'.
+src/index.ts(59046,9): error TS2339: Property 'MAX_VALUE' does not exist on type '(value: any) => any'.
+src/index.ts(59047,9): error TS2339: Property 'TYPE' does not exist on type '(value: any) => any'.
+src/index.ts(59054,8): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(59510,12): error TS2339: Property 'EPSILON1' does not exist on type '{}'.
+src/index.ts(59517,12): error TS2339: Property 'EPSILON2' does not exist on type '{}'.
+src/index.ts(59524,12): error TS2339: Property 'EPSILON3' does not exist on type '{}'.
+src/index.ts(59531,12): error TS2339: Property 'EPSILON4' does not exist on type '{}'.
+src/index.ts(59538,12): error TS2339: Property 'EPSILON5' does not exist on type '{}'.
+src/index.ts(59545,12): error TS2339: Property 'EPSILON6' does not exist on type '{}'.
+src/index.ts(59552,12): error TS2339: Property 'EPSILON7' does not exist on type '{}'.
+src/index.ts(59559,12): error TS2339: Property 'EPSILON8' does not exist on type '{}'.
+src/index.ts(59566,12): error TS2339: Property 'EPSILON9' does not exist on type '{}'.
+src/index.ts(59573,12): error TS2339: Property 'EPSILON10' does not exist on type '{}'.
+src/index.ts(59580,12): error TS2339: Property 'EPSILON11' does not exist on type '{}'.
+src/index.ts(59587,12): error TS2339: Property 'EPSILON12' does not exist on type '{}'.
+src/index.ts(59594,12): error TS2339: Property 'EPSILON13' does not exist on type '{}'.
+src/index.ts(59601,12): error TS2339: Property 'EPSILON14' does not exist on type '{}'.
+src/index.ts(59608,12): error TS2339: Property 'EPSILON15' does not exist on type '{}'.
+src/index.ts(59615,12): error TS2339: Property 'EPSILON16' does not exist on type '{}'.
+src/index.ts(59622,12): error TS2339: Property 'EPSILON17' does not exist on type '{}'.
+src/index.ts(59629,12): error TS2339: Property 'EPSILON18' does not exist on type '{}'.
+src/index.ts(59636,12): error TS2339: Property 'EPSILON19' does not exist on type '{}'.
+src/index.ts(59643,12): error TS2339: Property 'EPSILON20' does not exist on type '{}'.
+src/index.ts(59650,12): error TS2339: Property 'GRAVITATIONALPARAMETER' does not exist on type '{}'.
+src/index.ts(59657,12): error TS2339: Property 'SOLAR_RADIUS' does not exist on type '{}'.
+src/index.ts(59666,12): error TS2339: Property 'LUNAR_RADIUS' does not exist on type '{}'.
+src/index.ts(59673,12): error TS2339: Property 'SIXTY_FOUR_KILOBYTES' does not exist on type '{}'.
+src/index.ts(59682,12): error TS2339: Property 'sign' does not exist on type '{}'.
+src/index.ts(59700,12): error TS2339: Property 'signNotZero' does not exist on type '{}'.
+src/index.ts(59711,12): error TS2339: Property 'toSNorm' does not exist on type '{}'.
+src/index.ts(59712,33): error TS2339: Property 'clamp' does not exist on type '{}'.
+src/index.ts(59722,12): error TS2339: Property 'fromSNorm' does not exist on type '{}'.
+src/index.ts(59723,22): error TS2339: Property 'clamp' does not exist on type '{}'.
+src/index.ts(59747,12): error TS2339: Property 'sinh' does not exist on type '{}'.
+src/index.ts(59773,12): error TS2339: Property 'cosh' does not exist on type '{}'.
+src/index.ts(59791,12): error TS2339: Property 'lerp' does not exist on type '{}'.
+src/index.ts(59801,12): error TS2339: Property 'PI' does not exist on type '{}'.
+src/index.ts(59809,12): error TS2339: Property 'ONE_OVER_PI' does not exist on type '{}'.
+src/index.ts(59817,12): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(59825,12): error TS2339: Property 'PI_OVER_THREE' does not exist on type '{}'.
+src/index.ts(59833,12): error TS2339: Property 'PI_OVER_FOUR' does not exist on type '{}'.
+src/index.ts(59841,12): error TS2339: Property 'PI_OVER_SIX' does not exist on type '{}'.
+src/index.ts(59849,12): error TS2339: Property 'THREE_PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(59857,12): error TS2339: Property 'TWO_PI' does not exist on type '{}'.
+src/index.ts(59865,12): error TS2339: Property 'ONE_OVER_TWO_PI' does not exist on type '{}'.
+src/index.ts(59874,12): error TS2339: Property 'RADIANS_PER_DEGREE' does not exist on type '{}'.
+src/index.ts(59883,12): error TS2339: Property 'DEGREES_PER_RADIAN' does not exist on type '{}'.
+src/index.ts(59892,12): error TS2339: Property 'RADIANS_PER_ARCSECOND' does not exist on type '{}'.
+src/index.ts(59892,47): error TS2339: Property 'RADIANS_PER_DEGREE' does not exist on type '{}'.
+src/index.ts(59899,12): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(59905,31): error TS2339: Property 'RADIANS_PER_DEGREE' does not exist on type '{}'.
+src/index.ts(59913,12): error TS2339: Property 'toDegrees' does not exist on type '{}'.
+src/index.ts(59919,31): error TS2339: Property 'DEGREES_PER_RADIAN' does not exist on type '{}'.
+src/index.ts(59932,12): error TS2339: Property 'convertLongitudeRange' does not exist on type '{}'.
+src/index.ts(59938,26): error TS2339: Property 'TWO_PI' does not exist on type '{}'.
+src/index.ts(59958,12): error TS2339: Property 'negativePiToPi' does not exist on type '{}'.
+src/index.ts(59964,21): error TS2339: Property 'zeroToTwoPi' does not exist on type '{}'.
+src/index.ts(59964,48): error TS2339: Property 'PI' does not exist on type '{}'.
+src/index.ts(59964,65): error TS2339: Property 'PI' does not exist on type '{}'.
+src/index.ts(59973,12): error TS2339: Property 'zeroToTwoPi' does not exist on type '{}'.
+src/index.ts(59979,24): error TS2339: Property 'mod' does not exist on type '{}'.
+src/index.ts(59979,42): error TS2339: Property 'TWO_PI' does not exist on type '{}'.
+src/index.ts(59981,32): error TS2339: Property 'EPSILON14' does not exist on type '{}'.
+src/index.ts(59982,30): error TS2339: Property 'EPSILON14' does not exist on type '{}'.
+src/index.ts(59984,23): error TS2339: Property 'TWO_PI' does not exist on type '{}'.
+src/index.ts(59996,12): error TS2339: Property 'mod' does not exist on type '{}'.
+src/index.ts(60026,12): error TS2339: Property 'equalsEpsilon' does not exist on type '{}'.
+src/index.ts(60068,12): error TS2339: Property 'factorial' does not exist on type '{}'.
+src/index.ts(60101,12): error TS2339: Property 'incrementWrap' does not exist on type '{}'.
+src/index.ts(60132,12): error TS2339: Property 'isPowerOfTwo' does not exist on type '{}'.
+src/index.ts(60156,12): error TS2339: Property 'nextPowerOfTwo' does not exist on type '{}'.
+src/index.ts(60185,12): error TS2339: Property 'clamp' does not exist on type '{}'.
+src/index.ts(60239,12): error TS2339: Property 'acosClamped' does not exist on type '{}'.
+src/index.ts(60245,31): error TS2339: Property 'clamp' does not exist on type '{}'.
+src/index.ts(60256,12): error TS2339: Property 'asinClamped' does not exist on type '{}'.
+src/index.ts(60262,31): error TS2339: Property 'clamp' does not exist on type '{}'.
+src/index.ts(60272,12): error TS2339: Property 'chordLength' does not exist on type '{}'.
+src/index.ts(60291,12): error TS2339: Property 'logBase' does not exist on type '{}'.
+src/index.ts(60306,12): error TS2339: Property 'fog' does not exist on type '{}'.
+src/index.ts(60378,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60492,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60637,23): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60910,19): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60941,27): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60942,28): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(60973,33): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61062,18): error TS2339: Property 'equalsEpsilon' does not exist on type '{}'.
+src/index.ts(61068,18): error TS2339: Property 'equalsEpsilon' does not exist on type '{}'.
+src/index.ts(61074,18): error TS2339: Property 'equalsEpsilon' does not exist on type '{}'.
+src/index.ts(61150,24): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61151,24): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61155,16): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61156,16): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61209,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61234,25): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61312,25): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61313,29): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61465,42): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61466,38): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61592,40): error TS2339: Property 'EPSILON12' does not exist on type '{}'.
+src/index.ts(61713,26): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61714,25): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(61719,32): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61720,32): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61721,32): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(61732,46): error TS2339: Property 'EPSILON1' does not exist on type '{}'.
+src/index.ts(61779,16): error TS2339: Property 'sign' does not exist on type '{}'.
+src/index.ts(61976,50): error TS2339: Property 'EPSILON1' does not exist on type '{}'.
+src/index.ts(62135,18): error TS2304: Cannot find name 'Ellipsoid'.
+src/index.ts(62174,16): error TS2339: Property 'LUNAR_RADIUS' does not exist on type '{}'.
+src/index.ts(62175,16): error TS2339: Property 'LUNAR_RADIUS' does not exist on type '{}'.
+src/index.ts(62176,16): error TS2339: Property 'LUNAR_RADIUS' does not exist on type '{}'.
+src/index.ts(62236,26): error TS2554: Expected 3 arguments, but got 2.
+src/index.ts(62237,10): error TS2304: Cannot find name 'Ellipsoid'.
+src/index.ts(62276,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62296,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62306,37): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62307,32): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62335,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62407,16): error TS2339: Property 'sign' does not exist on type '{}'.
+src/index.ts(62495,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62529,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62550,14): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62753,32): error TS2339: Property 'TWO_PI' does not exist on type '{}'.
+src/index.ts(62805,56): error TS2339: Property 'EPSILON12' does not exist on type '{}'.
+src/index.ts(62905,19): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62906,17): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62913,25): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(62914,25): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(63302,29): error TS2339: Property 'equalsIgnoreCase' does not exist on type 'String'.
+src/index.ts(63303,20): error TS2339: Property 'equalsIgnoreCase' does not exist on type 'String'.
+src/index.ts(63311,29): error TS2339: Property 'equals' does not exist on type 'String'.
+src/index.ts(63312,20): error TS2339: Property 'equals' does not exist on type 'String'.
+src/index.ts(63317,29): error TS2339: Property 'isEmpty' does not exist on type 'String'.
+src/index.ts(63318,20): error TS2339: Property 'isEmpty' does not exist on type 'String'.
+src/index.ts(63324,29): error TS2339: Property 'contains' does not exist on type 'String'.
+src/index.ts(63325,20): error TS2339: Property 'contains' does not exist on type 'String'.
+src/index.ts(63331,17): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(63332,8): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(63574,7): error TS2304: Cannot find name 'pt'.
+src/index.ts(63575,15): error TS2304: Cannot find name 'pt'.
+src/index.ts(63577,23): error TS2304: Cannot find name 'pt'.
+src/index.ts(63577,29): error TS2304: Cannot find name 'pt'.
+src/index.ts(63580,23): error TS2304: Cannot find name 'pt'.
+src/index.ts(63580,29): error TS2304: Cannot find name 'pt'.
+src/index.ts(63626,21): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(63630,35): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(63632,39): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(63637,35): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(63638,32): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(63646,24): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(64219,5): error TS2304: Cannot find name 'stringHeight'.
+src/index.ts(64221,12): error TS2304: Cannot find name 'stringHeight'.
+src/index.ts(65554,20): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65560,20): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65636,15): error TS2339: Property 'toDegrees' does not exist on type 'Math'.
+src/index.ts(65637,15): error TS2339: Property 'toDegrees' does not exist on type 'Math'.
+src/index.ts(65648,15): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(65694,21): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65752,40): error TS2339: Property 'toDegrees' does not exist on type 'Math'.
+src/index.ts(65765,20): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65768,17): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65801,29): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(65818,15): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(65827,20): error TS2339: Property 'IEEEremainder' does not exist on type 'Math'.
+src/index.ts(65836,20): error TS2339: Property 'IEEEremainder' does not exist on type 'Math'.
+src/index.ts(65867,25): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65880,27): error TS2339: Property 'toRadians' does not exist on type 'Math'.
+src/index.ts(65911,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(66245,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(66364,15): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(66367,15): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(66392,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(66523,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(66538,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(66716,68): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(66841,63): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(68211,60): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(68222,5): error TS2304: Cannot find name '_client'.
+src/index.ts(68241,5): error TS2304: Cannot find name '_client'.
+src/index.ts(68436,25): error TS2447: The '&' operator is not allowed for boolean types. Consider using '&&' instead.
+src/index.ts(68454,25): error TS2447: The '&' operator is not allowed for boolean types. Consider using '&&' instead.
+src/index.ts(68712,59): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(68772,70): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(69213,63): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(69283,32): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(70973,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'dist2' must be of type 'any', but here has type 'number'.
+src/index.ts(71458,67): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(77570,47): error TS2304: Cannot find name 'lineType'.
+src/index.ts(77570,47): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(77652,49): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(77856,56): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(78728,15): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
+src/index.ts(78827,58): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(78962,63): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(79268,57): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(79412,56): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(86022,55): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(86659,67): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(86938,32): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(90158,39): error TS2339: Property 'isInfinite' does not exist on type '(value: any) => void'.
+src/index.ts(90972,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(91839,35): error TS2339: Property 'isInfinite' does not exist on type '(value: any) => void'.
+src/index.ts(93700,34): error TS2339: Property 'isInfinite' does not exist on type '(value: any) => void'.
+src/index.ts(95937,20): error TS2304: Cannot find name 'lineType'.
+src/index.ts(95939,29): error TS1313: The body of an 'if' statement cannot be the empty statement.
+src/index.ts(95971,22): error TS2304: Cannot find name 'lineType'.
+src/index.ts(96156,27): error TS2339: Property 'equals' does not exist on type 'string'.
+src/index.ts(97380,25): error TS2339: Property 'MAX_VALUE' does not exist on type '(value: any) => any'.
+src/index.ts(98026,33): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(98252,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98260,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98268,27): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98401,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98409,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98417,27): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98531,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98539,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98547,27): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98798,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98806,15): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(98814,27): error TS2304: Cannot find name 'northestPtIndex'.
+src/index.ts(101039,20): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(101059,21): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(101060,22): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(102865,34): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(102866,32): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(103136,27): error TS2339: Property 'equals' does not exist on type 'string'.
+src/index.ts(103687,25): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(103690,27): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(103952,25): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(103973,27): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(104795,17): error TS2304: Cannot find name 'getRevDLabel'.
+src/index.ts(105758,1): error TS2532: Object is possibly 'undefined'.
+src/index.ts(105810,26): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(106432,15): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
+src/index.ts(106546,35): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(106549,34): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(109696,29): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(109698,24): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(111693,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111695,36): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111703,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111705,36): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111713,19): error TS2339: Property 'equals' does not exist on type 'string'.
+src/index.ts(111758,36): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111761,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(111783,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(111790,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(111791,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(112146,9): error TS2304: Cannot find name 'angles'.
+src/index.ts(114279,27): error TS2339: Property 'contains' does not exist on type 'string'.
+src/index.ts(114285,25): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(114286,18): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114327,27): error TS2339: Property 'contains' does not exist on type 'string'.
+src/index.ts(114330,25): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(114332,18): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114402,23): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114405,23): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114442,27): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114460,24): error TS2339: Property 'toHexString' does not exist on type '(value: any) => any'.
+src/index.ts(114541,26): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114542,23): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114545,26): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114546,23): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114565,28): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114566,25): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114574,36): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114575,37): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114576,33): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114577,31): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114591,40): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114592,37): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(114760,16): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(114967,18): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(115675,3): error TS2532: Object is possibly 'undefined'.
+src/index.ts(117949,7): error TS2304: Cannot find name 'setFriendlyGraphicLineColor'.
+src/index.ts(117950,7): error TS2304: Cannot find name 'setHostileGraphicLineColor'.
+src/index.ts(117951,7): error TS2304: Cannot find name 'setNeutralGraphicLineColor'.
+src/index.ts(117952,7): error TS2304: Cannot find name 'setUnknownGraphicLineColor'.
+src/index.ts(117953,7): error TS2304: Cannot find name 'setFriendlyGraphicFillColor'.
+src/index.ts(117954,7): error TS2304: Cannot find name 'setHostileGraphicFillColor'.
+src/index.ts(117955,7): error TS2304: Cannot find name 'setNeutralGraphicFillColor'.
+src/index.ts(117956,7): error TS2304: Cannot find name 'setUnknownGraphicFillColor'.
+src/index.ts(117981,7): error TS2304: Cannot find name 'setFriendlyUnitLineColor'.
+src/index.ts(117982,7): error TS2304: Cannot find name 'setHostileUnitLineColor'.
+src/index.ts(117983,7): error TS2304: Cannot find name 'setNeutralUnitLineColor'.
+src/index.ts(117984,7): error TS2304: Cannot find name 'setUnknownUnitLineColor'.
+src/index.ts(117985,7): error TS2304: Cannot find name 'setFriendlyUnitFillColor'.
+src/index.ts(117986,7): error TS2304: Cannot find name 'setHostileUnitFillColor'.
+src/index.ts(117987,7): error TS2304: Cannot find name 'setNeutralUnitFillColor'.
+src/index.ts(117988,7): error TS2304: Cannot find name 'setUnknownUnitFillColor'.
+src/index.ts(120889,9): error TS2304: Cannot find name 'shapeType'.
+src/index.ts(120901,13): error TS2304: Cannot find name 'lineColor'.
+src/index.ts(120901,35): error TS2304: Cannot find name 'stroke'.
+src/index.ts(120913,12): error TS2304: Cannot find name '_TextLayout'.
+src/index.ts(121553,18): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(121553,41): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(121554,19): error TS2304: Cannot find name 'RuntimeException'.
+src/index.ts(121859,32): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(121938,22): error TS2339: Property 'superCall' does not exist on type '{ newArray: (obj1: any, obj2: any) => any[]; instanceOf: (obj: any) => boolean; instantialize: () => void; }'.
+src/index.ts(121948,32): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(121953,13): error TS2339: Property 'superCall' does not exist on type '{ newArray: (obj1: any, obj2: any) => any[]; instanceOf: (obj: any) => boolean; instantialize: () => void; }'.
+src/index.ts(121967,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(122837,29): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122840,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122843,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122846,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122849,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122852,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(122855,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123024,29): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123042,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123045,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123048,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123051,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123054,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123057,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123060,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123063,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123066,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123069,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123308,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123311,40): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123315,17): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(123322,35): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123325,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123328,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(123632,30): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124070,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124072,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124074,33): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(124397,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124401,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124421,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124423,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124472,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124476,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124487,23): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(124507,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124511,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124558,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124559,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124560,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124561,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124563,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124567,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124571,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124574,20): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124579,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124582,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124601,37): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124603,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124605,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124607,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124609,42): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124616,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124617,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124619,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124621,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124623,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124663,31): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(124679,15): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(124700,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(124711,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(124773,12): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(124835,12): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(124837,21): error TS2304: Cannot find name 'p'.
+src/index.ts(124837,30): error TS2304: Cannot find name 'q'.
+src/index.ts(124839,7): error TS2304: Cannot find name 'q'.
+src/index.ts(124840,8): error TS2304: Cannot find name 'p'.
+src/index.ts(124840,55): error TS2304: Cannot find name 'p'.
+src/index.ts(124840,63): error TS2304: Cannot find name 'q'.
+src/index.ts(124842,21): error TS2304: Cannot find name 'p'.
+src/index.ts(124843,24): error TS2304: Cannot find name 'q'.
+src/index.ts(124882,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(124885,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(125071,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(125077,16): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(125548,14): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125548,34): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125614,14): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125614,36): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125893,14): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125893,34): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125994,14): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(125994,36): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(126047,17): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126047,47): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126050,26): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126050,56): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126053,17): error TS2339: Property 'longBitsToDouble' does not exist on type '(value: any) => void'.
+src/index.ts(126053,41): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126056,17): error TS2339: Property 'longBitsToDouble' does not exist on type '(value: any) => void'.
+src/index.ts(126056,41): error TS2339: Property 'doubleToLongBits' does not exist on type '(value: any) => void'.
+src/index.ts(126121,29): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(126124,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(126127,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(126130,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(126542,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126543,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126544,19): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(126551,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126552,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126553,21): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(126712,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126713,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126714,19): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(126782,20): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126802,14): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126803,14): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126804,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126805,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(126879,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(126913,33): error TS2304: Cannot find name 'Throwable'.
+src/index.ts(126913,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(126914,18): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126915,18): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126916,18): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126917,18): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(126918,18): error TS2339: Property 'err' does not exist on type '() => void'.
+src/index.ts(127024,15): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(127041,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(127308,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127314,16): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127429,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127430,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127445,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127447,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127450,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127451,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(127875,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(127879,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(128558,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 't2' must be of type 'number', but here has type 'any'.
+src/index.ts(128581,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128582,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128583,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128584,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128585,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128586,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128595,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(128999,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129003,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129021,14): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129023,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129072,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129076,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129087,23): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(129107,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129111,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129160,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129161,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129162,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129163,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129165,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129169,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129173,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129176,20): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129181,16): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129184,18): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129203,37): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129205,44): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129207,44): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129209,44): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129211,44): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129222,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129223,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129225,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129227,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129229,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129243,31): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129256,15): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(129277,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(129288,17): error TS2304: Cannot find name 'InternalError'.
+src/index.ts(129350,12): error TS2339: Property 'out' does not exist on type '() => void'.
+src/index.ts(129426,15): error TS2304: Cannot find name 'IllegalArgumentException'.
+src/index.ts(129677,31): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129678,36): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129966,31): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129969,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129972,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129975,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129978,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129981,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129984,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129987,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129990,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(129993,38): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(130513,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(130514,29): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(131302,17): error TS2403: Subsequent variable declarations must have the same type.  Variable 'ctx' must be of type 'any', but here has type 'CanvasRenderingContext2D'.
+src/index.ts(131320,59): error TS2554: Expected 2 arguments, but got 3.
+src/index.ts(131366,16): error TS2554: Expected 2 arguments, but got 1.
+src/index.ts(132066,18): error TS2304: Cannot find name 'createBuffer'.
+src/index.ts(135870,9): error TS2403: Subsequent variable declarations must have the same type.  Variable 'affiliation' must be of type 'string', but here has type 'any'.
+src/index.ts(135921,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135922,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135923,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135924,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135925,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135926,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135929,20): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135929,43): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135932,20): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135932,43): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135936,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135937,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135938,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135939,11): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135948,15): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(135965,17): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+src/index.ts(137160,15): error TS2447: The '&' operator is not allowed for boolean types. Consider using '&&' instead.
+src/index.ts(137337,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138005,15): error TS2447: The '&' operator is not allowed for boolean types. Consider using '&&' instead.
+src/index.ts(138283,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138544,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138546,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138548,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138550,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138553,40): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138573,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138575,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138635,29): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(138635,42): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(138636,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(138650,33): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(138650,46): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(138652,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(138660,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138663,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138665,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138677,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138691,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138694,40): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138742,41): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138760,35): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138761,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138764,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138953,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138954,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138955,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(138992,36): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139036,38): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139062,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139085,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139087,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139089,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139091,31): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139096,17): error TS2339: Property 'equalsIgnoreCase' does not exist on type 'string'.
+src/index.ts(139133,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'dist' must be of type 'any', but here has type 'number'.
+src/index.ts(139144,29): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(139144,42): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139146,35): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139206,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139220,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139242,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'dist' must be of type 'any', but here has type 'number'.
+src/index.ts(139267,17): error TS2403: Subsequent variable declarations must have the same type.  Variable 'H2' must be of type 'any', but here has type 'string'.
+src/index.ts(139282,29): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(139282,42): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139283,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139297,33): error TS2339: Property 'isNaN' does not exist on type '(value: any) => void'.
+src/index.ts(139297,46): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139299,33): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(139314,37): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139327,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139341,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139381,39): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139408,41): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139470,17): error TS2403: Subsequent variable declarations must have the same type.  Variable 'strT1' must be of type 'string', but here has type 'any'.
+src/index.ts(139480,41): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(139496,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'r' must be of type 'number', but here has type 'any'.
+src/index.ts(139518,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'strH1' must be of type 'string', but here has type 'any'.
+src/index.ts(140054,11): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
+src/index.ts(140578,3): error TS1117: An object literal cannot have multiple properties with the same name.
+src/index.ts(140602,3): error TS1117: An object literal cannot have multiple properties with the same name.
+src/index.ts(140875,3): error TS1117: An object literal cannot have multiple properties with the same name.
+src/index.ts(141031,31): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141035,26): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141609,32): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141614,26): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141703,26): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141754,31): error TS2339: Property 'parseInt' does not exist on type '(value: any) => any'.
+src/index.ts(141853,47): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(141854,28): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(141868,49): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(141872,56): error TS2350: Only a void function can be called with the 'new' keyword.
+src/index.ts(143206,38): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143207,35): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143208,36): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143209,36): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143230,36): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143235,36): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143236,35): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143238,38): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143239,36): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143247,40): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143280,35): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143287,38): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143292,37): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143297,40): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(143710,32): error TS2554: Expected 5 arguments, but got 2.
+src/index.ts(143713,34): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(143727,41): error TS2554: Expected 3 arguments, but got 1.
+src/index.ts(143728,36): error TS2339: Property 'toDegrees' does not exist on type '{}'.
+src/index.ts(143729,35): error TS2339: Property 'toDegrees' does not exist on type '{}'.
+src/index.ts(143745,32): error TS2554: Expected 5 arguments, but got 2.
+src/index.ts(143748,34): error TS2339: Property 'toRadians' does not exist on type '{}'.
+src/index.ts(143756,41): error TS2554: Expected 3 arguments, but got 1.
+src/index.ts(143757,36): error TS2339: Property 'toDegrees' does not exist on type '{}'.
+src/index.ts(143758,35): error TS2339: Property 'toDegrees' does not exist on type '{}'.
+src/index.ts(144020,24): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144027,33): error TS2304: Cannot find name 'NumberFormatException'.
+src/index.ts(144027,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(144149,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144150,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144151,24): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144152,24): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144155,33): error TS2304: Cannot find name 'NumberFormatException'.
+src/index.ts(144155,33): error TS2554: Expected 1 arguments, but got 2.
+src/index.ts(144165,23): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144166,24): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144167,22): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144168,22): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144285,27): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144286,28): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144287,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(144288,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(145537,20): error TS2339: Property 'isEmpty' does not exist on type 'string'.
+src/index.ts(145563,24): error TS2339: Property 'isEmpty' does not exist on type 'string'.
+src/index.ts(145583,22): error TS2339: Property 'isEmpty' does not exist on type 'string'.
+src/index.ts(145590,18): error TS2339: Property 'isEmpty' does not exist on type 'string'.
+src/index.ts(145595,14): error TS2339: Property 'isEmpty' does not exist on type 'string'.
+src/index.ts(148516,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'x' must be of type 'number', but here has type 'any'.
+src/index.ts(148516,16): error TS2403: Subsequent variable declarations must have the same type.  Variable 'y' must be of type 'number', but here has type 'any'.
+src/index.ts(150729,15): error TS2403: Subsequent variable declarations must have the same type.  Variable 'labelWidth' must be of type 'number', but here has type 'any'.
+src/index.ts(151788,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'len' must be of type 'any', but here has type 'number'.
+src/index.ts(152309,38): error TS2339: Property 'dashedLineTo' does not exist on type 'CanvasRenderingContext2D'.
+src/index.ts(152313,38): error TS2339: Property 'dashedLineTo' does not exist on type 'CanvasRenderingContext2D'.
+src/index.ts(152953,7): error TS2304: Cannot find name 'context'.
+src/index.ts(153932,15): error TS2339: Property 'type' does not exist on type '{}'.
+src/index.ts(153933,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(153934,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(154054,7): error TS2304: Cannot find name 'svgWidth'.
+src/index.ts(154055,7): error TS2304: Cannot find name 'svgHeight'.
+src/index.ts(154084,9): error TS2304: Cannot find name 'svgWidth'.
+src/index.ts(154086,9): error TS2304: Cannot find name 'svgHeight'.
+src/index.ts(155250,15): error TS2339: Property 'smooth' does not exist on type 'any[]'.
+src/index.ts(155578,15): error TS2339: Property 'type' does not exist on type '{}'.
+src/index.ts(155579,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(155580,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(156217,27): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(156219,27): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(156221,27): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(156223,27): error TS2554: Expected 0 arguments, but got 1.
+src/index.ts(156607,20): error TS2339: Property 'equalsIgnoreCase' does not exist on type 'number'.
+src/index.ts(156607,54): error TS2339: Property 'equalsIgnoreCase' does not exist on type 'number'.
+src/index.ts(156661,16): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(156662,16): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(156664,24): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(156665,23): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(156667,16): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(156668,16): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(156670,25): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(156671,26): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(156976,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(156977,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(156978,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(156979,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(156980,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157004,20): error TS2339: Property 'smooth' does not exist on type 'any[]'.
+src/index.ts(157153,11): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
+src/index.ts(157545,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157546,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157547,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157548,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157549,23): error TS2339: Property 'properties' does not exist on type 'string'.
+src/index.ts(157573,20): error TS2339: Property 'smooth' does not exist on type 'any[]'.
+src/index.ts(157685,11): error TS2367: This comparison appears to be unintentional because the types 'false' and 'true' have no overlap.
+src/index.ts(158536,14): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(158537,14): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(158539,14): error TS2339: Property 'width' does not exist on type '{}'.
+src/index.ts(158539,57): error TS2339: Property 'x' does not exist on type '{}'.
+src/index.ts(158540,14): error TS2339: Property 'height' does not exist on type '{}'.
+src/index.ts(158540,26): error TS2339: Property 'y' does not exist on type '{}'.
+src/index.ts(158542,25): error TS2339: Property 'width' does not exist on type '{}'.
+src/index.ts(158543,25): error TS2339: Property 'height' does not exist on type '{}'.
+src/index.ts(158642,15): error TS2339: Property 'type' does not exist on type '{}'.
+src/index.ts(158643,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158644,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158648,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158654,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158659,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158665,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158675,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158676,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158699,33): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(158700,34): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(158810,15): error TS2339: Property 'type' does not exist on type '{}'.
+src/index.ts(158811,15): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158826,29): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(158827,30): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(158841,17): error TS2339: Property 'type' does not exist on type '{}'.
+src/index.ts(158842,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158845,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158846,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158847,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158848,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158849,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158851,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158853,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158855,43): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158856,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158858,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158859,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158860,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158861,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158863,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158864,17): error TS2339: Property 'properties' does not exist on type '{}'.
+src/index.ts(158937,11): error TS2304: Cannot find name 'altitudes'.
+src/index.ts(158938,16): error TS2304: Cannot find name 'i'.
+src/index.ts(158938,23): error TS2304: Cannot find name 'i'.
+src/index.ts(158938,38): error TS2304: Cannot find name 'i'.
+src/index.ts(158939,20): error TS2304: Cannot find name 'i'.
+src/index.ts(158939,39): error TS2304: Cannot find name 'i'.
+src/index.ts(158945,11): error TS2304: Cannot find name 'altitudes'.
+src/index.ts(158946,16): error TS2304: Cannot find name 'i'.
+src/index.ts(158946,23): error TS2304: Cannot find name 'i'.
+src/index.ts(158946,65): error TS2304: Cannot find name 'i'.
+src/index.ts(158947,47): error TS2304: Cannot find name 'i'.
+src/index.ts(158948,51): error TS2304: Cannot find name 'i'.
+src/index.ts(158956,31): error TS2339: Property 'contains' does not exist on type 'string'.
+src/index.ts(159090,11): error TS2322: Type 'string[]' is not assignable to type 'number'.
+src/index.ts(159145,27): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(159147,27): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/index.ts(159339,9): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159346,11): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159349,16): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159350,17): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159351,19): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159352,18): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159446,11): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159453,13): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159460,20): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159460,35): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159466,20): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159466,39): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159472,20): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159472,35): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159478,20): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159478,35): error TS2304: Cannot find name 'rbb'.
+src/index.ts(159681,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159682,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159784,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159785,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159795,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159796,26): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159850,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159851,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159907,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159908,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(159918,14): error TS2339: Property 'arraycopy' does not exist on type '() => void'.
+src/index.ts(160014,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160015,25): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160132,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160133,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160142,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160143,30): error TS2339: Property 'parseDouble' does not exist on type '(value: any) => void'.
+src/index.ts(160582,20): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160583,20): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160584,20): error TS2339: Property 'AN_AZIMUTH' does not exist on type '{}'.
+src/index.ts(160585,20): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160606,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160612,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160614,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160616,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160622,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160628,26): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160634,26): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160640,26): error TS2339: Property 'AN_AZIMUTH' does not exist on type '{}'.
+src/index.ts(160646,26): error TS2339: Property 'AN_AZIMUTH' does not exist on type '{}'.
+src/index.ts(160656,26): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160658,26): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160667,33): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160668,34): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160677,26): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160680,26): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160683,24): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160685,43): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160686,31): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160692,24): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160694,43): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160695,31): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160699,22): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160703,24): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160708,26): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160710,26): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160846,18): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160847,18): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160848,18): error TS2339: Property 'AN_AZIMUTH' does not exist on type '{}'.
+src/index.ts(160849,18): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160936,24): error TS2339: Property 'ALT_MODE' does not exist on type '{}'.
+src/index.ts(160944,24): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160947,24): error TS2339: Property 'X_ALTITUDE_DEPTH' does not exist on type '{}'.
+src/index.ts(160966,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160967,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(160969,26): error TS2339: Property 'AM_DISTANCE' does not exist on type '{}'.
+src/index.ts(161138,17): error TS2403: Subsequent variable declarations must have the same type.  Variable 'item' must be of type 'any', but here has type 'string'.
+src/index.ts(161295,14): error TS2554: Expected 9 arguments, but got 0.
+src/index.ts(161377,14): error TS2554: Expected 9 arguments, but got 0.
+src/index.ts(162025,21): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(162056,20): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(162401,30): error TS2339: Property 'EPSILON15' does not exist on type '{}'.
+src/index.ts(162450,15): error TS2554: Expected 9 arguments, but got 0.
+src/index.ts(162451,24): error TS2554: Expected 9 arguments, but got 0.
+src/index.ts(162494,30): error TS2339: Property 'EPSILON20' does not exist on type '{}'.
+src/index.ts(162620,43): error TS2339: Property 'EPSILON15' does not exist on type '{}'.
+src/index.ts(163163,14): error TS2554: Expected 1 arguments, but got 0.
+src/index.ts(163187,14): error TS2554: Expected 1 arguments, but got 0.
+src/index.ts(163246,28): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(163374,28): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163423,29): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(163424,33): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(163425,39): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163426,36): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163427,45): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163483,14): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163572,14): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(163944,38): error TS2339: Property 'EPSILON6' does not exist on type '{}'.
+src/index.ts(163970,49): error TS2339: Property 'EPSILON6' does not exist on type '{}'.
+src/index.ts(163976,19): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164007,23): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164008,20): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164009,20): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164049,30): error TS2339: Property 'EPSILON6' does not exist on type '{}'.
+src/index.ts(164085,26): error TS2339: Property 'acosClamped' does not exist on type '{}'.
+src/index.ts(164127,30): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164128,30): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164129,31): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164130,31): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164433,15): error TS2339: Property 'createTypedArray' does not exist on type '{}'.
+src/index.ts(164443,38): error TS2339: Property 'SIXTY_FOUR_KILOBYTES' does not exist on type '{}'.
+src/index.ts(164458,15): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164459,15): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164460,16): error TS2554: Expected 4 arguments, but got 0.
+src/index.ts(164461,14): error TS2554: Expected 9 arguments, but got 0.
+src/index.ts(164463,24): error TS2339: Property 'pointOnEllipsoid' does not exist on type '{}'.
+src/index.ts(164500,25): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164501,25): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164502,25): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164503,21): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164508,24): error TS2339: Property 'raisePositionsToHeight' does not exist on type '{}'.
+src/index.ts(164555,22): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164556,22): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164557,23): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164562,24): error TS2339: Property 'computeEllipsePositions' does not exist on type '{}'.
+src/index.ts(164590,41): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164592,31): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164593,26): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164634,22): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164657,22): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164717,24): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164722,24): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164783,22): error TS2339: Property 'PI_OVER_TWO' does not exist on type '{}'.
+src/index.ts(164802,7): error TS2339: Property 'positions' does not exist on type '{}'.
+src/index.ts(164803,7): error TS2339: Property 'numPts' does not exist on type '{}'.
+src/index.ts(164809,7): error TS2339: Property 'outerPositions' does not exist on type '{}'.
+src/index.ts(164821,5): error TS2300: Duplicate identifier 'EllipseGeometry'.
+src/index.ts(164826,10): error TS2300: Duplicate identifier 'EllipseGeometry'.
+src/index.ts(164836,16): error TS2339: Property 'RADIANS_PER_DEGREE' does not exist on type '{}'.
+src/index.ts(164865,29): error TS2554: Expected 2 arguments, but got 1.
+src/index.ts(164874,37): error TS2554: Expected 2 arguments, but got 1.
+src/index.ts(164921,16): error TS2304: Cannot find name 'computeExtrudedEllipse'.
+src/index.ts(164935,28): error TS2554: Expected 3 arguments, but got 0.
+src/index.ts(164944,36): error TS2339: Property 'computeEllipsePositions' does not exist on type '{}'.

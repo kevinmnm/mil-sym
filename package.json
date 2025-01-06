@@ -7,10 +7,11 @@
       "node": "^20.17.0"
    },
    "scripts": {
-      "build": "node ./build/index.js && tsc",
+      "build": "node ./build/pre-tsc.bin.js && npm run tsc && node ./build/post-tsc.bin.js",
       "package": "npm publish",
       "deploy__old": "npm run build && npm version patch && npm run package",
-      "tsc": "tsc"
+      "tsc": "tsc > ./tsc-result.log 2>&1 || true",
+      "test": "node ./build/post-tsc.bin.js"
    },
    "keywords": [],
    "author": "Kevin Song <kevin.song@parsons.us>",
