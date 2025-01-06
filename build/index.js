@@ -3,7 +3,8 @@ const fsp = require("fs").promises;
 const path = require("path");
 
 const CWD = process.cwd();
-const LIBRARY_FILE_NAME = "sm-bc.modified.js";
+// const LIBRARY_FILE_NAME = "sm-bc.modified.js";
+const LIBRARY_FILE_NAME = "sm-bc.js";
 const READ_DIR = path.join(CWD, "src");
 const READ_FILE_PATH = path.join(READ_DIR, LIBRARY_FILE_NAME);
 const WRITE_DIR = path.join(CWD, "src");
@@ -68,6 +69,9 @@ async function main() {
     console.log("=> Appending exports in duplicated file...");
     await fsp.appendFile(WRITE_FILE_PATH, `\n\n${exportSyntax}`);
 
+    console.log("=> Removing all duplicate identifier declarations... ");
+    await postBuildRemoveDuplicateVars(WRITE_FILE_PATH);
+
     console.log("=> Copying over assets files...");
     ASSET_DIRS.forEach((assetDir) => {
       fs.cpSync(assetDir, path.join(CWD, "dist", "assets"), {
@@ -82,7 +86,7 @@ async function main() {
 /**
  * Just to see what's exportable.
  **/
-async function showExportableFunctionNames() {
+async function showExportableFunctionNames(filepath = READ_FILE_PATH) {
   let exportSyntax = "export {";
   // Split the file into lines
   const exportableNames = {
@@ -90,7 +94,8 @@ async function showExportableFunctionNames() {
     vars: [],
   };
   try {
-    const data = await fsp.readFile(READ_FILE_PATH, "utf8");
+    const filePath = filepath || READ_FILE_PATH;
+    const data = await fsp.readFile(filePath, "utf8");
     const lines = data.split("\n");
 
     lines.forEach((line) => {
@@ -298,3 +303,78 @@ async function forceAddVariableDeclaration(targetFilePath) {
 //     console.log(error);
 //   }
 // }
+
+/**
+ * Remove all duplicate var declarations.
+ **/
+async function postBuildRemoveDuplicateVars(filepath = WRITE_FILE_PATH) {
+  try {
+    //  const result = await showExportableFunctionNames();
+    //  const vars = result.exportableNames.vars;
+    //  console.log(vars);
+
+    const filePath = filepath || WRITE_FILE_PATH;
+    const data = await fsp.readFile(filePath, "utf8");
+    const lines = data.split("\n");
+
+    const detectedVars = [];
+    const duplicateVars = [];
+
+    lines.forEach((line) => {
+      // Detect all vars.
+      if (line.startsWith("var ") && !line.includes("export")) {
+        const match = line.match(/var\s+([a-zA-Z_$][0-9a-zA-Z_$]*)\s*=/);
+        if (!match) return;
+        const varName = match[1];
+
+        const detectedVarNames = detectedVars.map((obj) => obj.varName);
+
+        //>> If first time detected <<//
+        if (!detectedVarNames.includes(varName)) {
+          detectedVars.push({
+            varName,
+            varLine: line,
+          });
+          return;
+        }
+
+        //>> If more than first time detected and not yet tracked as duplicate <<//
+        if (!duplicateVars.includes(varName)) {
+          duplicateVars.push({
+            varName,
+            varLine: line,
+          });
+        }
+      }
+    });
+
+    const keptVarLines = [];
+    const filteredLines = lines.filter((line) => {
+      //>> Check if line is the targetted var declaration line <<//
+      const foundDuplicateLine = duplicateVars.find(
+        (obj) => obj.varLine === line
+      );
+      if (!foundDuplicateLine) return true;
+
+      //>> If very first line, keep it <<//
+      if (!keptVarLines.includes(foundDuplicateLine)) {
+        keptVarLines.push(foundDuplicateLine);
+        return true;
+      }
+
+      //>> If not very first line, remove it <<//
+      return false;
+    });
+
+    const newFileContent = filteredLines.join("\n");
+    await fsp.writeFile(filePath, newFileContent, "utf8");
+
+    return {
+      detectedVars,
+      newFileContent,
+    };
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+}
