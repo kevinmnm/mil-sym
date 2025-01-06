@@ -1,6 +1,6 @@
 {
    "name": "mil-sym",
-   "version": "1.0.0",
+   "version": "0.2.0",
    "main": "dist/index.js",
    "types": "dist/types/index.d.ts",
    "engines": {
@@ -9,7 +9,8 @@
    "scripts": {
       "build": "node ./build/index.js && tsc",
       "package": "npm publish",
-      "deploy__old": "npm run build && npm version patch && npm run package"
+      "deploy__old": "npm run build && npm version patch && npm run package",
+      "tsc": "tsc"
    },
    "keywords": [],
    "author": "Kevin Song <kevin.song@parsons.us>",
