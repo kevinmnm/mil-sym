@@ -79,7 +79,7 @@ function removeDuplicateExportLine() {
     //  const varLine = line;
     const varLine = match[0];
     console.log("varLine", varLine);
-    if (SKIP_VAR_NAMES.includes(varName)) return false;
+    if (SKIP_VAR_NAMES.includes(varName)) return true;
 
     //>> Check if this variable already exported via `exports.*` <<//
     const foundIncludedExport = includedExports.find(
