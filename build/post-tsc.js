@@ -57,6 +57,8 @@ function removeDuplicateExportLine() {
     return false;
   });
 
+  //>> List of var names to skip removing line <<//
+  const SKIP_VAR_NAMES = ['armyc2', 'java', 'vincenty', 'android']
   const moreFilteredLines = filteredLines.filter((line) => {
     //  const match = line.match(/^var\s+([a-zA-Z_$][0-9a-zA-Z_$]*)\s*=/);
     const match = line.match(
@@ -70,9 +72,14 @@ function removeDuplicateExportLine() {
     const varLine = match[0];
     console.log("varLine", varLine);
 
+    //>> Check if this variable already exported via `exports.*` <<//
     const foundIncludedExport = includedExports.find(
       (ie) => ie.varName === varName
     );
+
+    if (!foundIncludedExport) return true;
+
+    //>> Check 
 
     if (foundIncludedExport) return false;
     return true;
